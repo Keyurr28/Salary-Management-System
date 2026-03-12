@@ -5,12 +5,17 @@ import DashboardHome from './modules/dashboard/pages/DashboardHome';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
+  const isProd = process.env.NODE_ENV === 'production';
+  const basename = isProd ? '/Salary-Management-System/' : '/';
+
   return (
-    <Router basename="/"><Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<DashboardHome />} />
-    </Routes>
+    <Router basename={basename}>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/login/Salary-Management-System" element={<Login />} />
+        <Route path="/dashboard" element={<DashboardHome />} />
+      </Routes>
     </Router>
   );
 }
