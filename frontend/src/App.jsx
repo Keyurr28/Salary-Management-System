@@ -5,7 +5,7 @@ import DashboardHome from './modules/dashboard/pages/DashboardHome';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
-  const isProd = process.env.NODE_ENV === 'production';
+  const isProd = import.meta.env.PROD;
   const basename = isProd ? '/Salary-Management-System/' : '/';
 
   return (
