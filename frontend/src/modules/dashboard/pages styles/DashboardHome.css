@@ -656,3 +656,105 @@
     color: #6B7280;
     flex-wrap: wrap;
 }
+
+/* ── Dark Mode Overrides ── */
+body.theme-transition,
+body.theme-transition * {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, fill 0.4s ease, stroke 0.4s ease !important;
+}
+
+body.dark-mode .cn-root {
+    background: #0f172a;
+}
+
+body.dark-mode .cn-header {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+body.dark-mode .cn-search-input {
+    background: #0f172a;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.dark-mode .cn-search-input:focus {
+    border-color: #3B5BDB;
+    background: #1e293b;
+}
+
+body.dark-mode .cn-icon-btn,
+body.dark-mode .cn-qa-btn,
+body.dark-mode .cn-view-btn,
+body.dark-mode .cn-cal-nav {
+    background: #0f172a;
+    border-color: #334155;
+    color: #94a3b8;
+}
+
+body.dark-mode .cn-icon-btn:hover,
+body.dark-mode .cn-qa-btn:hover,
+body.dark-mode .cn-view-btn:hover,
+body.dark-mode .cn-cal-nav:hover {
+    background: #334155;
+    color: #f8fafc;
+}
+
+body.dark-mode .cn-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .cn-card-title,
+body.dark-mode .cn-stat-num {
+    color: #f8fafc;
+}
+
+body.dark-mode .cn-stat-label,
+body.dark-mode .cn-legend-text,
+body.dark-mode .cn-activity-time,
+body.dark-mode .cn-snap-id,
+body.dark-mode .cn-dir-id,
+body.dark-mode .cn-cal-dh,
+body.dark-mode .cn-cal-legend {
+    color: #94a3b8;
+}
+
+body.dark-mode .cn-activity-name,
+body.dark-mode .cn-snap-name,
+body.dark-mode .cn-dir-name,
+body.dark-mode .cn-cal-day {
+    color: #e2e8f0;
+}
+
+body.dark-mode .cn-select {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode .cn-activity-item {
+    border-color: #334155;
+}
+
+body.dark-mode .cn-cal-day:hover {
+    background: #334155;
+}
+
+body.dark-mode .cn-cal-key {
+    background: #064e3b;
+    color: #34d399 !important;
+}
+
+body.dark-mode .cn-card svg text {
+    fill: #f8fafc !important;
+}
+
+body.dark-mode .recharts-cartesian-grid-horizontal line,
+body.dark-mode .recharts-cartesian-grid-vertical line {
+    stroke: #334155;
+}
+
+body.dark-mode .cn-card circle[stroke="#E5E7EB"] {
+    stroke: #334155 !important;
+}

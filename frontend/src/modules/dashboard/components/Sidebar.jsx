@@ -30,6 +30,7 @@ const Sidebar = ({ isMobile }) => (
         <nav className="cn-nav flex-grow-1">
             {navItems.map((item, i) => (
                 <a href="#" key={i}
+                    onClick={(e) => e.preventDefault()}
                     className={`cn-nav-item ${item.active ? 'cn-nav-active' : ''}`}>
                     <i className={`bi ${item.icon}`} />
                     <span>{item.label}</span>
