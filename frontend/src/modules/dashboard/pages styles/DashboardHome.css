@@ -683,6 +683,10 @@ body.dark-mode .cn-search-input:focus {
     background: #1e293b;
 }
 
+body.dark-mode .cn-hamburger {
+    color: #fff !important;
+}
+
 body.dark-mode .cn-icon-btn,
 body.dark-mode .cn-qa-btn,
 body.dark-mode .cn-view-btn,
